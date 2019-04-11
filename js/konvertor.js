@@ -50,4 +50,71 @@ function konvertor() {
 				document.getElementById("konvertorFINAL").innerHTML = "Iznos koji dobijate: &emsp;" + iznos * 0.00730836971 + " GBP";
 			}
 			// usd -> ....
+			else if(izValIzbor == 3 && uValIzbor == 6)
+			{
+				document.getElementById("konvertorFINAL").innerHTML = "Iznos koji dobijate: &emsp;" + iznos * 104.755919 + " RSD";
+			}
+			else if(izValIzbor == 3 && uValIzbor == 7)
+			{
+				document.getElementById("konvertorFINAL").innerHTML = "Iznos koji dobijate: &emsp;" + iznos * 0.888060033 + " EUR";
+			}
+			else if(izValIzbor == 3 && uValIzbor == 8)
+			{
+				document.getElementById("konvertorFINAL").innerHTML = "Iznos koji dobijate: &emsp;" + iznos + " USD";
+			}
+			else if(izValIzbor == 3 && uValIzbor == 9)
+			{
+				document.getElementById("konvertorFINAL").innerHTML = "Iznos koji dobijate: &emsp;" + iznos * 1.00310964 + " CHF";
+			}
+			else if(izValIzbor == 3 && uValIzbor == 10)
+			{
+				document.getElementById("konvertorFINAL").innerHTML = "Iznos koji dobijate: &emsp;" + iznos * 0.765872712 + " GBP";
+			}
+			// chf -> ...
+			else if(izValIzbor == 4 && uValIzbor == 6)
+			{
+				document.getElementById("konvertorFINAL").innerHTML = "Iznos koji dobijate: &emsp;" + iznos * 104.431175 + " RSD";
+			}
+			else if(izValIzbor == 4 && uValIzbor == 7)
+			{
+				document.getElementById("konvertorFINAL").innerHTML = "Iznos koji dobijate: &emsp;" + iznos * 0.885464316 + " EUR";
+			}
+			else if(izValIzbor == 4 && uValIzbor == 8)
+			{
+				document.getElementById("konvertorFINAL").innerHTML = "Iznos koji dobijate: &emsp;" + iznos * 0.9969 + " USD";
+			}
+			else if(izValIzbor == 4 && uValIzbor == 9)
+			{
+				document.getElementById("konvertorFINAL").innerHTML = "Iznos koji dobijate: &emsp;" + iznos + " CHF";
+			}
+			else if(izValIzbor == 4 && uValIzbor == 10)
+			{
+				document.getElementById("konvertorFINAL").innerHTML = "Iznos koji dobijate: &emsp;" + iznos * 0.763481124 + " GBP";
+			}
+			// gbp -> ...
+			else if(izValIzbor == 5 && uValIzbor == 6)
+			{
+				document.getElementById("konvertorFINAL").innerHTML = "Iznos koji dobijate: &emsp;" + iznos * 136.779803 + " RSD";
+			}
+			else if(izValIzbor == 5 && uValIzbor == 7)
+			{
+				document.getElementById("konvertorFINAL").innerHTML = "Iznos koji dobijate: &emsp;" + iznos * 1.1597176 + " EUR";
+			}
+			else if(izValIzbor == 5 && uValIzbor == 8)
+			{
+				document.getElementById("konvertorFINAL").innerHTML = "Iznos koji dobijate: &emsp;" + iznos * 1.3057 + " USD";
+			}
+			else if(izValIzbor == 5 && uValIzbor == 9)
+			{
+				document.getElementById("konvertorFINAL").innerHTML = "Iznos koji dobijate: &emsp;" + iznos * 1.30976026 + " CHF";
+			}
+			else if(izValIzbor == 5 && uValIzbor == 10)
+			{
+				document.getElementById("konvertorFINAL").innerHTML = "Iznos koji dobijate: &emsp;" + iznos + " GBP";
+			}
+			else
+			{
+				return null;
+			}
+
 		}

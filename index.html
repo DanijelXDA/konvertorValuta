@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="images/favicon.ico">
+
+    <title>Konvertor valuta</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-grid.min.css" rel="stylesheet">
+    <link href="css/bootstrap-reboot.min.css" rel="stylesheet">
+
+  </head>
+
+  <body class="bg-light">
+    <div class="container">
+      <div class="py-5 text-center">
+        <img class="d-block mx-auto mb-4" src="images/favicon.ico" alt="" width="72" height="72">
+        <h2>Konvertor valuta</h2>
+        <p class="lead">Web aplikacija "Konvertor valuta" napravljena je sa ciljom brze, lake i tačne konverzije iz jedne u drugu valutu.</p>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 order-md-2 mb-4 d-none d-lg-block">
+        <h3>Vremenska prognoza</h3> <br /> 
+          <a class="weatherwidget-io" href="https://forecast7.com/sr/44d4420d69/mladenovac/" data-label_1="MLADENOVAC" data-label_2="Vremenska prognoza" data-theme="original" >MLADENOVAC Vremenska prognoza</a>
+          <script>
+          !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+          </script>
+
+        </div>
+        <div class="col-md-8 order-md-1">
+          <h4 class="mb-3">Konvertor valuta</h4>
+          <form>
+           <div class="row">
+              <div class="col-md-5 mb-3">
+                <label>Iz valute</label>
+                <select class="custom-select d-block w-100" id="izValute" required>
+                  <option value="1">EUR - Evro</option>
+                  <option value="2">RSD - Srpski dinar</option>
+                  <option value="3">USD - Američki dolar</option>
+                  <option value="4">CHF - Švajcarski franak</option>
+                  <option value="5">GBP - Britanska funta</option>
+                </select>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label>U valutu</label>
+                <select class="custom-select d-block w-100" id="uValutu" required>
+                  <option value="6">RSD - Srpski dinar</option>
+                  <option value="7">EUR - Evro</option>
+                  <option value="8">USD - Američki dolar</option>
+                  <option value="9">CHF - Švajcarski franak</option>
+                  <option value="10">GBP - Britanska funta</option>
+                </select>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label>Iznos</label>
+                <input type="text" class="form-control" id="iznos" placeholder="100" required>
+              </div>
+            </div>
+            <br /> <br />
+            <div>
+            	<h4 id="konvertorFINAL" style="color: #3f9009;"></h4>
+            </div>
+            <hr class="mb-4">
+            <button type="button" class="btn btn-primary btn-lg btn-block" onclick="konvertor();">Konvertuj</button>
+          </form>
+        </div>
+      </div>
+
+      <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">&copy; 2019 Danijel Jovanović</p>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="privatnost.html">Privatnost</a></li>
+          <li class="list-inline-item"><a href="uslovi-koriscenja.html">Uslovi korišćenja</a></li>
+          <li class="list-inline-item"><a href="podrska.html">Podrška</a></li>
+        </ul>
+      </footer>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    
+    <!-- KONVERTOR JS -->  
+    <script type="text/javascript" src="js/konvertor.js"></script>
+
+</body>
+</html>
